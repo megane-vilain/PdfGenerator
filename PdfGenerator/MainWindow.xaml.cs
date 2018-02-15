@@ -48,7 +48,7 @@ namespace PdfGenerator
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Message");
+                        MessageBox.Show(ex.Message, "Erreur");
 
                     }
                     finally
