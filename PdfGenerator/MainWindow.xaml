@@ -5,10 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PdfGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="BtnSave" Content="Sauvegarder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="198,126,0,0" Click="BtnSave_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="53,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        Title="PdfGenerator" Height="auto" Width="auto">
 
+    
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Fichier">
+                    <MenuItem Header="_Paramètres"/>
+                    <MenuItem Header="_Fermer" Click="BtnClose_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Locataires">
+                    <MenuItem Header="_Ajouter" Click="BtnAdd_Click"></MenuItem>
+
+                </MenuItem>
+            </Menu>
+        </DockPanel>
     </Grid>
 </Window>
